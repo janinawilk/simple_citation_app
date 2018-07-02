@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Citation:</strong>
+  <%= @citation.citation %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @citation.author %>
+</p>
+
+<%= link_to edit_citation_path, class: 'button is-link' do %>
+  Edit
+<% end %> |
+
+<%= link_to citations_path, class: 'button is-link' do %>
+  Back
+<% end %>

@@ -1,0 +1,29 @@
+<%= form_with(model: citation, local: true) do |form| %>
+  <% if citation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(citation.errors.count, "error") %> prohibited this citation from being saved:</h2>
+
+      <ul>
+      <% citation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :citation %>
+    <%= form.text_field :citation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :author %>
+    <%= form.text_field :author %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+  <textarea class="textarea" placeholder="e.g. Veni, vidi, vici"></textarea>
+<% end %>
