@@ -1,5 +1,12 @@
 {
   "name": "simple_citation_app",
-  "private": true,
-  "dependencies": {}
+  "private": false,
+  "dependencies": {
+    "bulma": "^0.7.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:twinie96/simple_citation_app.git",
+  "author": "<twinie96@gmail.com>",
+  "license": "MIT"
 }
