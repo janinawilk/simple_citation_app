@@ -12,16 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :citation %>
-    <%= form.text_field :citation %>
+    <%= form.label :citation, class: 'label' %>
+    <%= form.text_field :citation, class: 'input', type: 'text',
+      placeholder: "e.g Veni, vidi, vici" %>
   </div>
 
   <div class="field">
-    <%= form.label :author %>
-    <%= form.text_field :author %>
+    <%= form.label :author, class: 'label' %>
+    <%= form.text_field :author, class: 'input', type: 'text',
+    placeholder: "e.g Caesar" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <center>
+    <div class="actions">
+      <%= form.submit 'Create citation', class: 'button is-link' %>
+      <%= link_to 'Back', citations_path, class: 'button is-link' %>
+    </div>
+  </center>
 <% end %>
