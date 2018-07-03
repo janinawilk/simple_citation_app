@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2018_07_02_114313) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "citations", force: :cascade do |t|
     t.string "citation"
     t.string "author"

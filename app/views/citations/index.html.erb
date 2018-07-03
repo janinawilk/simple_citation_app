@@ -17,12 +17,8 @@
       <tr>
         <td><%= citation.citation %></td>
         <td><%= citation.author %></td>
-        <td><%= link_to citation, class: 'button is-info' do %>
-          Show
-        <% end %></td>
-        <td><%= link_to edit_citation_path(citation), class: 'button is-link' do %>
-          Edit
-        <% end %></td>
+
+
         <td><%= link_to citation, method: :delete, data: {confirm: 'You sure?'}, class: 'button is-danger' do %>
           Destroy
         <% end %></td>
