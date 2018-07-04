@@ -1,5 +1,5 @@
-// Import Bulma and Buefy styles
-@import "bulma/bulma";
+// Import Bulma styles
+@import "bulma";
 /* @import "~buefy/src/scss/buefy"; */
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -16,3 +16,4 @@
  *= require_tree .
  *= require_self
  */
+ //= require bulma
