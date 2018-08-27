@@ -17,15 +17,18 @@
     </thead>
 
     <tbody>
+      <%= will_paginate @citations %>
       <% @citations.each do |citation| %>
         <tr>
           <td><%= citation.citation %></td>
           <td><%= citation.author %></td>
+          <td><%= citation.created_at.strftime("%d %B %Y") %></td>
           <td><%= link_to citation, method: :delete, data: {confirm: 'You sure?'}, class: 'button is-danger' do %>
-            Destroy
+            Delete
           <% end %></td>
         </tr>
       <% end %>
+      <%= will_paginate @citations %>
     </tbody>
   </table>
   <br>
