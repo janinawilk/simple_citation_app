@@ -3,7 +3,7 @@ class CitationsController < ApplicationController
 
   def index
     @citations = Citation.paginate(
-      page: params[:page]).order(:created_at)
+      page: params[:page], per_page: 10).order(:created_at)
   end
 
   def show

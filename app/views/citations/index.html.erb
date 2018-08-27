@@ -28,9 +28,9 @@
           <% end %></td>
         </tr>
       <% end %>
-      <%= will_paginate @citations %>
     </tbody>
   </table>
+  <%= will_paginate @citations %>
   <br>
   <%= link_to new_citation_path, class: 'button is-primary is-medium' do %>
     New Citation
